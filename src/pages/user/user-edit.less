@@ -1,0 +1,40 @@
+.user_edit{
+  .form_wrapper{
+    .form_item{
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .title{
+        position: relative;
+        display: inline-block;
+        margin-left: 24px;
+        margin-right: 14px;
+        &::after {
+          content: ':';
+          position: absolute;
+          right: -6px;
+          top: 0;
+        }
+        &.title_top{
+          vertical-align: top;
+        }
+      }
+      .tips {
+        display: inline-block;
+        color: #7f7f7f;
+        margin-left: 10px;
+        &.tips_top{
+          vertical-align: top;
+        }
+      }
+      .basic_input,
+      .basic_textarea {
+        width: 300px;
+      }
+      .btn{
+        margin-left: 10px;
+      }
+    }
+  }
+}
